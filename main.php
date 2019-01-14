@@ -9,12 +9,14 @@
         <script src="index.js" type="text/javascript"></script>
         
         <?php
-        if ($_GET["name"]) {
-            echo "Hello " . $_GET["name"];
+        if ($_POST["name"] === "Mark" && $_POST["password"] === "123") {
+            echo "<b>Welcome</b>";
+        } else {
+            echo "<p style='color:red;'>You are bad</p>";
         }
         ?>
         
         <br>
-        <a href="index.php">Exit</a>
+        <a href="index.php">Logout</a>
     </body>
 </html>
